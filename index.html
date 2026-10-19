@@ -1,737 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Md Ruhul Kuddus | Data Entry Specialist</title>
-
-<meta name="description" content="Md Ruhul Kuddus is a Data Entry Specialist providing accurate data entry, Excel, Google Sheets, copy paste, web research, lead generation, email marketing and virtual assistant services.">
-
-<meta name="keywords" content="Md Ruhul Kuddus, Data Entry Specialist, Data Entry, Excel Data Entry, Google Sheets, Copy Paste, Lead Generation, Web Research, Email Marketing, Virtual Assistant">
-
-<meta name="author" content="Md Ruhul Kuddus">
-<meta name="robots" content="index, follow">
-
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0
-}
-
-html{
-  scroll-behavior:smooth
-}
-
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:#172033;
-  background:#fff;
-  line-height:1.6
-}
-
-a{
-  text-decoration:none;
-  color:inherit
-}
-
-.container{
-  width:min(1120px,92%);
-  margin:auto
-}
-
-nav{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:#fff;
-  border-bottom:1px solid #e8edf5
-}
-
-.nav{
-  height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between
-}
-
-.logo{
-  font-size:21px;
-  font-weight:800;
-  color:#10213d
-}
-
-.logo span{
-  display:block;
-  font-size:12px;
-  color:#1677ff;
-  font-weight:600
-}
-
-.links{
-  display:flex;
-  gap:28px;
-  align-items:center;
-  font-weight:600;
-  font-size:14px
-}
-
-.links a:hover{
-  color:#1677ff
-}
-
-.btn{
-  display:inline-block;
-  padding:13px 22px;
-  border-radius:10px;
-  background:#1677ff;
-  color:white;
-  font-weight:700;
-  border:none;
-  cursor:pointer
-}
-
-.btn.alt{
-  background:transparent;
-  color:#1677ff;
-  border:1px solid #1677ff
-}
-
-.hero{
-  background:linear-gradient(135deg,#071a31,#0b3154);
-  color:white;
-  padding:90px 0
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:50px;
-  align-items:center
-}
-
-.badge{
-  display:inline-block;
-  background:#1bb58a;
-  padding:7px 13px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:700;
-  margin-bottom:18px
-}
-
-h1{
-  font-size:clamp(38px,5vw,62px);
-  line-height:1.08;
-  margin-bottom:20px
-}
-
-h1 span{
-  color:#21b8ff
-}
-
-.hero p{
-  max-width:650px;
-  color:#d9e6f5;
-  font-size:17px;
-  margin-bottom:28px
-}
-
-.actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap
-}
-
-.hero-card{
-  min-height:330px;
-  border-radius:22px;
-  background:linear-gradient(145deg,#143c5b,#091d31);
-  border:1px solid #31516d;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:35px;
-  box-shadow:0 20px 50px #0005
-}
-
-.hero-card strong{
-  font-size:28px;
-  display:block
-}
-
-.hero-card small{
-  color:#b9cce0
-}
-
-section{
-  padding:80px 0
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:42px
-}
-
-.section-title .eyebrow,
-.eyebrow{
-  color:#1677ff;
-  font-weight:800;
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:1px
-}
-
-.section-title h2{
-  font-size:36px;
-  margin:6px 0
-}
-
-.section-title p{
-  color:#68758a
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px
-}
-
-.card{
-  padding:28px;
-  border:1px solid #e5ebf3;
-  border-radius:16px;
-  background:#fff;
-  box-shadow:0 8px 25px #1720330a
-}
-
-.icon{
-  font-size:28px;
-  margin-bottom:12px
-}
-
-.card h3{
-  margin-bottom:8px
-}
-
-.card p{
-  color:#66748a;
-  font-size:14px
-}
-
-.about{
-  background:#f6f9fd
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center
-}
-
-.about-box{
-  background:#fff;
-  padding:32px;
-  border-radius:18px;
-  box-shadow:0 10px 35px #17203312
-}
-
-.about-box h2{
-  font-size:34px;
-  margin-bottom:12px
-}
-
-.about-box p{
-  color:#637087;
-  margin-bottom:14px
-}
-
-.checks{
-  display:grid;
-  gap:10px;
-  margin-top:20px
-}
-
-.checks div:before{
-  content:"✓";
-  color:#1677ff;
-  font-weight:900;
-  margin-right:10px
-}
-
-.stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  margin-top:22px
-}
-
-.stat{
-  padding:20px;
-  border-radius:14px;
-  background:#eef6ff;
-  text-align:center
-}
-
-.stat strong{
-  font-size:25px;
-  color:#1677ff;
-  display:block
-}
-
-.portfolio{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px
-}
-
-.work{
-  padding:25px;
-  border-radius:16px;
-  background:#f6f9fd;
-  border:1px solid #e5ebf3
-}
-
-.work h3{
-  margin-bottom:8px
-}
-
-.work p{
-  color:#68758a;
-  font-size:14px
-}
-
-.contact{
-  background:#071a31;
-  color:white
-}
-
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px
-}
-
-.contact p{
-  color:#c8d7e8;
-  margin:10px 0 20px
-}
-
-.contact-card{
-  background:#102b47;
-  padding:30px;
-  border-radius:18px
-}
-
-.contact-card div{
-  margin:14px 0;
-  color:#e3edf7
-}
-
-footer{
-  background:#061323;
-  color:#b9c8d8;
-  padding:24px 0;
-  text-align:center;
-  font-size:13px
-}
-
-@media(max-width:800px){
-
-  .links{
-    display:none
-  }
-
-  .hero-grid,
-  .about-grid,
-  .contact-grid{
-    grid-template-columns:1fr
-  }
-
-  .hero{
-    padding:65px 0
-  }
-
-  .services,
-  .portfolio{
-    grid-template-columns:1fr
-  }
-
-  .stats{
-    grid-template-columns:1fr 1fr
-  }
-
-  section{
-    padding:60px 0
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Ruhul Kuddus | Freelancer & Digital Marketer</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0
+    }
+
+    html{
+      scroll-behavior:smooth
+    }
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      color:#172033;
+      background:#fff;
+      line-height:1.6
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit
+    }
+
+    .container{
+      width:min(1120px,92%);
+      margin:auto
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:#fff;
+      border-bottom:1px solid #e8edf5
+    }
+
+    .nav{
+      height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between
+    }
+
+    .logo{
+      font-size:21px;
+      font-weight:800;
+      color:#10213d
+    }
+
+    .logo span{
+      display:block;
+      font-size:12px;
+      color:#1677ff;
+      font-weight:600
+    }
+
+    .links{
+      display:flex;
+      gap:28px;
+      align-items:center;
+      font-weight:600;
+      font-size:14px
+    }
+
+    .links a:hover{
+      color:#1677ff
+    }
+
+    .btn{
+      display:inline-block;
+      padding:13px 22px;
+      border-radius:10px;
+      background:#1677ff;
+      color:white;
+      font-weight:700;
+      border:none;
+      cursor:pointer
+    }
+
+    .btn.alt{
+      background:transparent;
+      color:#1677ff;
+      border:1px solid #1677ff
+    }
+
+    .hero{
+      background:linear-gradient(135deg,#071a31,#0b3154);
+      color:white;
+      padding:90px 0
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:50px;
+      align-items:center
+    }
+
+    .badge{
+      display:inline-block;
+      background:#1bb58a;
+      padding:7px 13px;
+      border-radius:30px;
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:18px
+    }
+
+    h1{
+      font-size:clamp(38px,5vw,62px);
+      line-height:1.08;
+      margin-bottom:20px
+    }
+
+    h1 span{
+      color:#21b8ff
+    }
+
+    .hero p{
+      max-width:650px;
+      color:#d9e6f5;
+      font-size:17px;
+      margin-bottom:28px
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap
+    }
+
+    .hero-card{
+      min-height:330px;
+      border-radius:22px;
+      background:linear-gradient(145deg,#143c5b,#091d31);
+      border:1px solid #31516d;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:35px;
+      box-shadow:0 20px 50px #0005
+    }
+
+    .hero-card strong{
+      font-size:28px;
+      display:block
+    }
+
+    .hero-card small{
+      color:#b9cce0
+    }
+
+    section{
+      padding:80px 0
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:42px
+    }
+
+    .section-title .eyebrow,
+    .eyebrow{
+      color:#1677ff;
+      font-weight:800;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:1px
+    }
+
+    .section-title h2{
+      font-size:36px;
+      margin:6px 0
+    }
+
+    .section-title p{
+      color:#68758a
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px
+    }
+
+    .card{
+      padding:28px;
+      border:1px solid #e5ebf3;
+      border-radius:16px;
+      background:#fff;
+      box-shadow:0 8px 25px #1720330a
+    }
+
+    .icon{
+      font-size:28px;
+      margin-bottom:12px
+    }
+
+    .card h3{
+      margin-bottom:8px
+    }
+
+    .card p{
+      color:#66748a;
+      font-size:14px
+    }
+
+    .about{
+      background:#f6f9fd
+    }
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      margin-top:30px
+    }
+
+    .about-box{
+      background:#fff;
+      padding:32px;
+      border-radius:18px;
+      box-shadow:0 10px 35px #17203312
+    }
+
+    .about-box h3{
+      font-size:22px;
+      margin-bottom:15px;
+      color:#1677ff
+    }
+
+    .about-box ul{
+      list-style-type:disc;
+      padding-left:20px
+    }
+
+    .about-box li{
+      margin-bottom:10px
+    }
+
+    .portfolio-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px
+    }
+
+    .portfolio-card{
+      background:#ffffff;
+      border-radius:12px;
+      border:1px solid #e5ebf3;
+      padding:20px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.05)
+    }
+
+    .portfolio-card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:8px;
+      margin-bottom:15px
+    }
+
+    .contact{
+      background:#071a31;
+      color:white
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px
+    }
+
+    .contact p{
+      color:#c8d7e8;
+      margin:10px 0 20px
+    }
+
+    .contact-card{
+      background:#102b47;
+      padding:30px;
+      border-radius:18px
+    }
+
+    .contact-card div{
+      margin:14px 0;
+      color:#e3edf7
+    }
+
+    footer{
+      background:#061323;
+      color:#b9c8d8;
+      padding:24px 0;
+      text-align:center;
+      font-size:13px
+    }
+
+    @media(max-width:800px){
+      .links{
+        display:none
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .services{
+        grid-template-columns:1fr
+      }
+
+      .hero{
+        padding:65px 0
+      }
+
+      section{
+        padding:60px 0
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav>
-  <div class="container nav">
-
-    <a class="logo" href="#home">
-      Md Ruhul Kuddus
-      <span>Data Entry Specialist</span>
-    </a>
-
-    <div class="links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="mailto:reshad.shek@gmail.com">Hire Me</a>
-    </div>
-
-  </div>
-</nav>
-
-<section class="hero" id="home">
-  <div class="container hero-grid">
-
-    <div>
-
-      <span class="badge">
-        Data Entry • Lead Generation • Virtual Assistance
-      </span>
-
-      <h1>
-        Accurate Data.<br>
-        <span>Better Results.</span>
-      </h1>
-
-      <p>
-        I’m Md Ruhul Kuddus, a Data Entry Specialist and Virtual Assistant
-        helping businesses with accurate data entry, Excel, Google Sheets,
-        copy-paste work, web research, lead generation, email marketing
-        and other online business tasks.
-      </p>
-
-      <div class="actions">
-        <a class="btn" href="mailto:reshad.shek@gmail.com">
-          Get In Touch
-        </a>
-
-        <a class="btn alt" href="#services">
-          View Services
-        </a>
-      </div>
-
-    </div>
-
-    <div class="hero-card">
-      <div>
-        <strong>Work Smart.</strong>
-        <strong>Grow Together.</strong>
-        <small>Reliable • Fast • Detail-focused</small>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="services">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="eyebrow">
-        My Services
-      </div>
-
-      <h2>
-        What I Can Do
-      </h2>
-
-      <p>
-        Professional Data Entry, Web Research, Lead Generation,
-        Excel and Virtual Assistant services for businesses and individuals.
-      </p>
-
-    </div>
-
-    <div class="services">
-
-      <div class="card">
-        <div class="icon">📊</div>
-
-        <h3>
-          Data Entry
-        </h3>
-
-        <p>
-          Accurate data entry from websites, PDFs, images and documents
-          into Excel, Google Sheets, Word, CRM and databases.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">📋</div>
-
-        <h3>
-          Copy Paste
-        </h3>
-
-        <p>
-          Fast and accurate copy-paste work, document updating,
-          data transfer and repetitive online tasks.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🔎</div>
-
-        <h3>
-          Lead Generation
-        </h3>
-
-        <p>
-          Business lead generation, company research and contact list
-          building with organized and accurate data.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">📢</div>
-        <h3>Facebook Ads</h3>
-        <p>Creating and managing high-converting Facebook and Instagram ad campaigns, precise audience targeting, pixel setup, and scaling sales.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🎯</div>
-        <h3>Google Ads</h3>
-        <p>Setting up and optimizing Google Search, Display, and PPC campaigns to drive targeted website traffic and maximize your return on ad spend (ROAS).</p>
-      </div>
-      
-      <div class="card">
-        <div class="icon">🌐</div>
-
-        <h3>
-          Web Research
-        </h3>
-
-        <p>
-          Professional web research, online data collection, market
-          research and finding accurate business information.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">✉️</div>
-
-        <h3>
-          Email Marketing
-        </h3>
-
-        <p>
-          Email list preparation, data organization, prospect research
-          and campaign support.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">💻</div>
-
-        <h3>
-          Virtual Assistant
-        </h3>
-
-        <p>
-          Administrative support, file management, data cleanup
-          and other online business tasks.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="about" class="about-section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p class="intro-text">
-      Hi, I am <strong>Md Ruhul Kuddus</strong>, a dedicated <strong>Freelancer & Paid Ads Specialist</strong> based in Shyamnagar, Satkhira, Bangladesh. I help businesses grow their online presence, reach targeted customers through paid ad campaigns, and manage essential digital operations.
-    </p>
-
-    <div class="about-content">
-      <div class="about-box">
-        <h3>What I Do</h3>
-        <ul>
-          <li><strong>Digital Advertising:</strong> Planning, creating, and running high-converting Facebook Ads and Google Ads campaigns.</li>
-          <li><strong>Lead Generation:</strong> Finding and building targeted B2B/B2C prospect lists for your marketing outreach.</li>
-          <li><strong>Data Entry & Management:</strong> Organizing, cleaning, and structuring business data into actionable formats.</li>
-          <li><strong>Web Research & Admin Support:</strong> Performing detailed online research and managing day-to-day freelance tasks.</li>
-        </ul>
-      </div>
-
-      <div class="about-box">
-        <h3>Why Work With Me?</h3>
-        <ul>
-          <li><strong>ROI-Focused Approach:</strong> I design ad campaigns with a focus on maximum results and better return on investment.</li>
-          <li><strong>High Accuracy:</strong> I ensure error-free data management and research for client-ready deliverables.</li>
-          <li><strong>On-Time & Reliable:</strong> I respect deadlines and keep clear, open communication throughout every project.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="portfolio">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="eyebrow">
-        Portfolio
-      </div>
-
-      <!-- Portfolio Section Start -->
-<section id="portfolio" class="portfolio-section" style="padding: 50px 20px; background-color: #f8f9fa;">
-  <div class="container" style="max-width: 1100px; margin: 0 auto;">
-    <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #1a1a1a;">My Work Samples</h2>
-    
-    <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-
-      <!-- Portfolio Item 1 -->
-      <div class="portfolio-card" style="background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); padding: 20px;">
-        <img src="আপনার_প্রথম_ছবির_নাম.jpg" alt="Data Entry Sample" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 15px;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #0056b3;">B2B Lead Generation & Directory Data</h3>
-        <p style="font-size: 0.95rem; color: #555; line-height: 1.5;">Collected and organized clean, verified business contact lists including addresses, phone numbers, and emails into structured spreadsheets.</p>
-      </div>
-
-      <!-- Portfolio Item 2 -->
-      <div class="portfolio-card" style="background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); padding: 20px;">
-        <img src="আপনার_দ্বিতীয়_ছবির_নাম.jpg" alt="Financial Data Research" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 15px;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #0056b3;">Financial & Web Research Data</h3>
-        <p style="font-size: 0.95rem; color: #555; line-height: 1.5;">Detailed web research and financial data organization in Excel with high accuracy, tailored for professional business requirements.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- Portfolio Section End -->
-      <h2>
-        Selected Work Areas
-      </h2>
-
-      <p>
-        Examples of projects I can help businesses complete.
-      </p>
-
-    </div>
-
-    <div class="portfolio">
-
-      <div class="work">
-
-        <h3>
-          Excel Data Management
-        </h3>
-
-        <p>
-          Data entry, cleanup, formatting, sorting, filtering and
-          spreadsheet organization.
-        </p>
-
-      </div>
-
-      <div class="work">
-
-        <h3>
-          Lead List Building
-        </h3>
-
-        <p>
-          Researching companies and contacts and organizing information
-          into structured lead lists.
-        </p>
-
-      </div>
-
-      <div class="work">
-
-        <h3>
-          Web Research
-        </h3>
-
-        <p>
-          Finding accurate information online and preparing it in
-          a client-ready format.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="contact" id="contact">
-
-  <div class="container contact-grid">
-
-    <div>
-
-      <div class="eyebrow">
-        Contact
-      </div>
-
-      <h2>
-        Let’s Work Together
-      </h2>
-
-      <p>
-        Have a data entry, lead generation, copy-paste, research or
-        email marketing task? Send me the details and I’ll get back to you.
-      </p>
-
-      <a class="btn" href="mailto:reshad.shek@gmail.com">
-        Email Me
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav">
+      <a class="logo" href="#home">
+        Md Ruhul Kuddus
+        <span>Freelancer & Ads Specialist</span>
       </a>
-    <a class="btn" href="https://www.facebook.com/YOUR_USERNAME" target="_blank">
-      Facebook Me
-    </a>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="mailto:reshad.shek@gmail.com">Hire Me</a>
+      </div>
     </div>
+  </nav>
 
-    <div class="contact-card">
-
-      <h3>
-        Contact Details
-      </h3>
-
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
       <div>
-        📧 reshad.shek@gmail.com
+        <span class="badge">
+          Paid Ads • Lead Generation • Data Entry
+        </span>
+
+        <h1>
+          Accurate Data.<br>
+          <span>Better Results.</span>
+        </h1>
+
+        <p>
+          I’m Md Ruhul Kuddus, a Freelancer & Paid Ads Specialist helping businesses grow through high-converting Facebook/Google Ads campaigns, Lead Generation, Data Entry, and Web Research.
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="mailto:reshad.shek@gmail.com">Get In Touch</a>
+          <a class="btn alt" href="#services">View Services</a>
+        </div>
       </div>
 
-      <div>
-        📍 Shyamnagar, Satkhira, Bangladesh
+      <div class="hero-card">
+        <div>
+          <strong>Work Smart.</strong>
+          <strong>Grow Together.</strong>
+          <small>Reliable • Fast • Detail-focused</small>
+        </div>
       </div>
-
-      <div>
-        💼 Available for freelance projects
-      </div>
-
     </div>
+  </section>
 
-  </div>
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">My Services</div>
+        <h2>What I Can Do</h2>
+        <p>Professional Paid Ads, Lead Generation, Data Entry, and Web Research for your business.</p>
+      </div>
 
-</section>
+      <div class="services">
+        <div class="card">
+          <div class="icon">📢</div>
+          <h3>Facebook Ads</h3>
+          <p>Creating and managing high-converting Facebook and Instagram ad campaigns, precise targeting, and scaling sales.</p>
+        </div>
 
-<footer>
-  © 2026 Md Ruhul Kuddus. All rights reserved.
-</footer>
+        <div class="card">
+          <div class="icon">🎯</div>
+          <h3>Google Ads</h3>
+          <p>Setting up Google Search & Display PPC campaigns to drive targeted traffic and maximize return on ad spend (ROAS).</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔎</div>
+          <h3>Lead Generation</h3>
+          <p>Business lead generation, company research, and contact list building with organized B2B/B2C data.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>Data Entry</h3>
+          <p>Accurate data entry from websites, PDFs, images into Excel, Google Sheets, Word, and databases.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Web Research</h3>
+          <p>Professional web research, online data collection, market research, and accurate business info gathering.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✉️</div>
+          <h3>Email Marketing</h3>
+          <p>Email list preparation, data organization, prospect research, and campaign support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">About Me</div>
+        <h2>Who I Am</h2>
+        <p>Hi, I am Md Ruhul Kuddus, a dedicated Freelancer & Paid Ads Specialist based in Shyamnagar, Satkhira, Bangladesh.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-box">
+          <h3>What I Do</h3>
+          <ul>
+            <li><strong>Digital Advertising:</strong> Planning and running Facebook & Google Ads campaigns.</li>
+            <li><strong>Lead Generation:</strong> Building targeted B2B/B2C prospect lists.</li>
+            <li><strong>Data Entry:</strong> Organizing and cleaning business data into Excel & Sheets.</li>
+            <li><strong>Web Research:</strong> Detailed online research for business needs.</li>
+          </ul>
+        </div>
+
+        <div class="about-box">
+          <h3>Why Work With Me?</h3>
+          <ul>
+            <li><strong>ROI-Focused:</strong> I design ad campaigns focused on maximum results.</li>
+            <li><strong>High Accuracy:</strong> Error-free data management and deliverables.</li>
+            <li><strong>On-Time Delivery:</strong> Respecting deadlines and providing regular updates.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Portfolio</div>
+        <h2>My Work Samples</h2>
+        <p>Here are examples of completed client projects and data management tasks.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="data entry.jpg" alt="Data Entry Work Sample">
+          <h3>B2B Lead Generation & Directory Data</h3>
+          <p>Collected and organized clean, verified business contact lists including addresses, phone numbers, and emails.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="new.jpg" alt="Financial Data Research Sample">
+          <h3>Financial & Web Research Data</h3>
+          <p>Detailed web research and financial data organization in Excel with high accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Let’s Work Together</h2>
+        <p>Have a Facebook/Google Ads, Lead Generation, or Data Entry task? Send me the details and I'll get back to you.</p>
+
+        <div class="actions">
+          <a class="btn" href="mailto:reshad.shek@gmail.com">Email Me</a>
+          <a class="btn alt" href="https://www.facebook.com/reshad.shek" target="_blank" style="color:white; border-color:white;">Facebook Profile</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Contact Details</h3>
+        <div>📧 reshad.shek@gmail.com</div>
+        <div>📍 Shyamnagar, Satkhira, Bangladesh</div>
+        <div>💼 Available for freelance projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      © 2026 Md Ruhul Kuddus. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
